@@ -26,9 +26,5 @@ end
 
 def valid_phone_number?(phone)
   phone_numbers = phone.scan(/\d{10}|\d{3}[-\. ]\d{3}[-\. ]\d{4}|\(\d{3}\)[-\. ]\d{3}[-\. ]\d{4}|\(\d{3}\)\d{7}|\(\d{3}\)\d{3}[-\. ]\d{4}/)
-  if phone_numbers.length > 0
-    true
-  else
-    false
-  end
+  phone_numbers.length > 0 ? true : false
 end
