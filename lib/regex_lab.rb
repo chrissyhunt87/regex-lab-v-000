@@ -17,6 +17,11 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   words_capitalized_with_punc = word.scan(/^[A-Z][^?!.]*[?.!]$/)
+  if words_capitalized_with_punc.length > 0
+    true
+  else
+    false
+  end
 end
 
 def valid_phone_number?(phone)
